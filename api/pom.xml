@@ -30,7 +30,7 @@
 
     <groupId>jakarta.servlet</groupId>
     <artifactId>jakarta.servlet-api</artifactId>
-    <version>5.0.0</version>
+    <version>5.9.0</version>
 
     <name>Jakarta Servlet</name>
     <url>https://projects.eclipse.org/projects/ee4j.servlet</url>
@@ -375,7 +375,7 @@ Use is subject to <a href="{@docRoot}/doc-files/speclicense.html" target="_top">
                             </execution>
                         </executions>
                     </plugin>
-                    <plugin>
+              <!--      <plugin>
                         <groupId>net.revelc.code</groupId>
                         <artifactId>impsort-maven-plugin</artifactId>
                         <configuration>
@@ -389,7 +389,7 @@ Use is subject to <a href="{@docRoot}/doc-files/speclicense.html" target="_top">
                                 </goals>
                             </execution>
                         </executions>
-                    </plugin>
+                    </plugin> -->
                 </plugins>
             </build>
         </profile>
