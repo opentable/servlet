@@ -28,7 +28,7 @@
 
     <groupId>jakarta.servlet</groupId>
     <artifactId>servlet-parent</artifactId>
-    <version>5.9.0</version>
+    <version>5.9.0-ot</version>
     <packaging>pom</packaging>
 
     <name>Jakarta Servlet Parent</name>
@@ -86,4 +86,19 @@
             </plugin>
         </plugins>
     </build>
+
+    <distributionManagement>
+        <snapshotRepository>
+            <id>opentable.snapshot</id>
+            <name>opentable-snapshots</name>
+            <uniqueVersion>true</uniqueVersion>
+            <url>https://artifactory.otenv.com/snapshots</url>
+        </snapshotRepository>
+        <repository>
+            <id>opentable</id>
+            <name>opentable-internal</name>
+            <url>https://artifactory.otenv.com/internal</url>
+            <uniqueVersion>false</uniqueVersion>
+        </repository>
+    </distributionManagement>
 </project>

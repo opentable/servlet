@@ -30,7 +30,7 @@
 
     <groupId>jakarta.servlet</groupId>
     <artifactId>jakarta.servlet-api</artifactId>
-    <version>5.9.0</version>
+    <version>5.9.0-ot</version>
 
     <name>Jakarta Servlet</name>
     <url>https://projects.eclipse.org/projects/ee4j.servlet</url>
@@ -184,7 +184,7 @@
             <plugin>
                 <groupId>org.apache.felix</groupId>
                 <artifactId>maven-bundle-plugin</artifactId>
-                <version>4.2.1</version>
+                <version>5.1.1</version>
                 <configuration>
                     <supportedProjectTypes>
                         <supportedProjectType>jar</supportedProjectType>
@@ -435,4 +435,20 @@ Use is subject to <a href="{@docRoot}/doc-files/speclicense.html" target="_top">
         </profile>
         
     </profiles>
+
+    <!-- use ot repos to upload jars, images -->
+    <distributionManagement>
+        <snapshotRepository>
+            <id>opentable.snapshot</id>
+            <name>opentable-snapshots</name>
+            <uniqueVersion>true</uniqueVersion>
+            <url>https://artifactory.otenv.com/snapshots</url>
+        </snapshotRepository>
+        <repository>
+            <id>opentable</id>
+            <name>opentable-internal</name>
+            <url>https://artifactory.otenv.com/internal</url>
+            <uniqueVersion>false</uniqueVersion>
+        </repository>
+    </distributionManagement>
 </project>
